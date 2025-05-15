@@ -2368,7 +2368,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.637401, y: 0.7927999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2383,7 +2383,7 @@ Transform:
   m_GameObject: {fileID: 400350278}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.34, y: 0, z: 0}
+  m_LocalPosition: {x: -0.0019, y: 0.4405, z: 0}
   m_LocalScale: {x: 0.4, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5567,7 +5567,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAAIIeyRK6kolAIAAH4FAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFtVF1v2jAU/SvIz2sV0paOvW1A6Sa1RWVTH5Y+GOeGWDh25I8CrfjvvdcJTcomIcWc+3XOvdd+Y1K7GoQ3dm5lfmdyYN8GjM7sy6Az3sKOr41eylc4+jzJ3JfkxKPPI/fSID6kMGcq8FaK73qtyDlBMGhZGFvN8jVMjPMO4YIrB2iyxlO0RuhtwHb4ORtTyB5P6TWdXvE0TgYHPArQHmznenmeXrW+R8/GMWiheFVDTqw7//SYedi4adTTehB3YZSSriXD/L6OYh/5nqTmkqOwWD05p6olyHXpKWs/9KEoHPiWkOX7qbTYoSYn+2GatlXcbRpWL1wFqjK6jISanHf/mM+G0VxYU90eyw4TKuFLKTZIUXDne23tw9OO+TD2ZsvVhq8UPJWg783cmqBzNHobKDQ4SKfd3w9lkxLEpsMbqidgqLtmJyeTIQ2HKH43UbJaxUZeNsBSmdjsOHqwOJafSDguhmtTIEos/jj4zdf9DWoNN9I6j6ZWpSZ6KxMsubJZ7BmpCX5irIYIt6Rr0Fz5/QLT+NMJnth6ZU8sN5zuSlu8tR2vwElIhDv/JDkxLcy2G5aDX6GqF0ZqvwRuRdnL50qzvQNXPgSvpIZOERnusYkTo3Wzfe4/YctgCy56YR52PliYcs/jDUBOuCV5PxQbGiN0UIoWMqqg5H9RBf2eqcklx7oqwuzeIDMEP32faRHWQeaf15yJa7hK0/EqHYrRRZpcnCVfYZTw9OJ6POajIh2xeA+kxp5ztWia1o4KN0h3WjTu/PE5G8wtr+PFyy3fzuVrZXrjl7owS2EB9EOT4UMsWCyCz0M+yyXKXIL3UsfdY28ZU0ZsIM8+EmWxsbOdtzzrsmSsli/GE5KxSXy/MnZgh3dQSwMEFAAACAgAAAgh7FwRY1htAAAAeAAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPWMzTQUVBKL0osyCgGihiCOKWZKSB2tFKyeaqpkZFlkpFhspmxkYGxroFFqplBopGxuaVlolmakZlSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAAgh7JErqSiUAgAAfgUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAAgh7FwRY1htAAAAeAAAAAkAJAAAAAAAAAAAAAAA4QIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAACZAwAAAAA=
+    dataString: UEsDBBQAAAgIAAAIIezd+Z6CkwIAAH8FAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VG1v2jAQ/ivIn9cqpC0d+7YBpZvUFpVN/bD0g3EuxMKxI78UaMV/350TmpRtElLM3XMvz3NnvzGpXQ3CGzu3Mr8zObAvA0Zn9mnQOW9hx9dGL+UrHDFPMvclgXjEPHIvDdqHFOZMBd5K8VWvFYETNAYtC2OrWb6GiXHeobngygG6rPEUrdH0NmA7/JyNKWSPp/SaTq94GieDAx4FaA+2g16ep1ct9ohsgEELxasacuq6w6fHzMMGppFPi6DehVFKurYZ5vd1JPvI90Q1lxyJxerJOVUtQa5LT1n7oQ9F4cC3DVm+n0qLCjU52TfTyFZxt2m6euEqUJXRZWyoyXn3l/tsGN2FNdXtsewwoRK+lGKDLQrufE/WvnnadT6M2my52vCVgqcS9L2ZWxN0jk5vA4UGB+m0+/vObFKC2HT2ptUTY6g7sZOTyRCHQyS/myhZraKQl41hqUwUO44eLI7lOzYcF8O1KdBKXfxy8JOv+xvUOm6kdR5dLUtN7a1MsARls6gZsQl+YqwG289Qg+bK7xeYx5+O8MT3/6gbTpelrd76jnfgJCSaO3ySnLgWZttNy8GPUNULI7VfArei7OVzpdnegSsfgldSQzcHctyjihOjdbN+7h9hy2ALLnphHnY+WJhyz+MVwJ5wTfJ+KCoaI3RQijYysqDkv5EF/Z5J5ZJjXRXN7N5gZ2j88H2mTVgHmX/ccyau4SpNx6t0KEYXaXJxlnyGUcLTi+vxmI+KdMTiRZAaNedq0YjWjgpXSHdcNC798T0bzC2v483LLd/O5WtlXIeUujBLYQH0Q5PhnSxYLILvQz7LJdJcgvdSx+VjbxlTRmwgz94TZVHY2c5bnnVZMlbLF+PJkrFJfMAydmCHP1BLAwQUAAAICAAACCHsXBFjWG0AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9YzNNBRUEovSizIKAaKGII4pZkpIHa0UrJ5qqmRkWWSkWGymbGRgbGugUWqmUGikbG5pWWiWZqRmVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAACCHs3fmegpMCAAB/BQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAACCHsXBFjWG0AAAB4AAAACQAkAAAAAAAAAAAAAADgAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAJgDAAAAAA==
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -9014,7 +9014,7 @@ Transform:
   m_GameObject: {fileID: 1851092181}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.0958, z: 0}
   m_LocalScale: {x: 0.7, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9066,7 +9066,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.76042575}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -9229,7 +9229,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1966491777}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -4.3394804, y: 2.545699, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9237,7 +9237,7 @@ Transform:
   - {fileID: 400350280}
   - {fileID: 1851092182}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!114 &1966491779
 MonoBehaviour:
   m_ObjectHideFlags: 0
