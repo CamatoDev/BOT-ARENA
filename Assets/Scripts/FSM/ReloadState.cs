@@ -1,20 +1,22 @@
 ﻿using UnityEngine;
 
+// L’IA recharge ses munitions lorsqu’elle n’en a plus
 public class ReloadState : IBotState
 {
     private BotController bot;
     private float reloadTime = 2f;
     private float timer = 0f;
 
-    public ReloadState(BotController bot)
-    {
-        this.bot = bot;
-    }
+    public ReloadState(BotController bot) { this.bot = bot; }
 
     public void Enter()
     {
         Debug.Log("Entering RELOAD 🔄");
         timer = 0f;
+
+        // Pendant le rechargement, le bot fuit si l’ennemi est proche
+        if (bot.enemyTarget != null && bot.IsInShootingRange())
+            bot.Flee();
     }
 
     public void Execute()

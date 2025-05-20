@@ -1,17 +1,14 @@
 ﻿using UnityEngine;
-
+// L’IA patrouille entre plusieurs points tant qu’aucun ennemi n’est en vue
 public class PatrolState : IBotState
 {
     private BotController bot;
 
-    public PatrolState(BotController bot)
-    {
-        this.bot = bot;
-    }
+    public PatrolState(BotController bot) { this.bot = bot; }
 
     public void Enter()
     {
-        //Debug.Log("Entering PATROL 🟢");
+        Debug.Log("Entering PATROL");
         bot.SetRandomPatrolPoint();
     }
 
@@ -34,12 +31,12 @@ public class PatrolState : IBotState
 
         if (bot.IsAtDestination())
         {
-            bot.SetRandomPatrolPoint();
+            bot.SetRandomPatrolPoint(); // Continue à patrouiller
         }
     }
 
     public void Exit()
     {
-        //Debug.Log("Exiting PATROL");
+        Debug.Log("Exiting PATROL");
     }
 }
