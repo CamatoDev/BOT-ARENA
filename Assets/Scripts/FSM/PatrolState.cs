@@ -9,11 +9,13 @@ public class PatrolState : IBotState
     public void Enter()
     {
         Debug.Log("Entering PATROL");
+        bot.stateText.text = "Entering PATROL";
         bot.SetRandomPatrolPoint();
     }
 
     public void Execute()
     {
+        bot.stateText.text = "PATROL...";
         if (bot.Health <= bot.fleeThreshold)
         {
             bot.StateMachine.ChangeState(new FleeState(bot));

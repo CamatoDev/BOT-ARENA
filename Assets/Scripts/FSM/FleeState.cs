@@ -18,9 +18,15 @@ public class FleeState : IBotState
         if (bot.Health > bot.fleeThreshold)
         {
             if (bot.Ammo > 0 && bot.CanSeeEnemy())
-                bot.StateMachine.ChangeState(new AttackState(bot));
-            else
-                bot.StateMachine.ChangeState(new PatrolState(bot));
+                bot.StateMachine.ChangeState(new ChaseState(bot));
+        }
+        if (bot.Health <= 25)
+        {
+            bot.StateMachine.ChangeState(new CollectItemState(bot));
+        }
+        else
+        {
+            bot.StateMachine.ChangeState(new PatrolState(bot));
         }
     }
 

@@ -11,7 +11,8 @@ public class ReloadState : IBotState
 
     public void Enter()
     {
-        Debug.Log("Entering RELOAD 🔄");
+        Debug.Log("Entering RELOAD");
+        bot.stateText.text = "Entering RELOAD";
         timer = 0f;
 
         // Pendant le rechargement, le bot fuit si l’ennemi est proche
@@ -34,7 +35,7 @@ public class ReloadState : IBotState
             bot.Reload();
 
             if (bot.CanSeeEnemy())
-                bot.StateMachine.ChangeState(new AttackState(bot));
+                bot.StateMachine.ChangeState(new ChaseState(bot));
             else
                 bot.StateMachine.ChangeState(new PatrolState(bot));
         }
