@@ -31,11 +31,11 @@ public class CollectItemState : IBotState
 
         bot.SetTarget(nearestItem.transform);
 
-        float distance = Vector3.Distance(bot.transform.position, nearestItem.transform.position);
-        if (distance < 1.5f) // Bonus ramassé
+        float distance = Vector2.Distance(bot.transform.position, nearestItem.transform.position);
+        if (distance < 0.25f) // Bonus ramassé
         {
             Debug.Log("Arrivé sur item.");
-            // CollectItem() sera appelé via le trigger
+            // CollectItem() sera appelé via le HealthItem
         }
     }
 
@@ -52,7 +52,7 @@ public class CollectItemState : IBotState
 
         foreach (var item in items)
         {
-            float dist = Vector3.Distance(bot.transform.position, item.transform.position);
+            float dist = Vector2.Distance(bot.transform.position, item.transform.position);
             if (dist < minDist)
             {
                 closest = item;

@@ -30,6 +30,11 @@ public class BotController : MonoBehaviour
     public float reloadCooldown = 1.5f;      // Temps d’attente après rechargement
     public float lastReloadTime = -10f;      // Horodatage du dernier rechargement
 
+    [Header("Shooting System")]
+    public GameObject bulletPrefab;
+    public Transform firePoint;
+
+
 
     void Awake()
     {
@@ -88,16 +93,17 @@ public class BotController : MonoBehaviour
 
     public void Shoot()
     {
-        if (!CanShoot()) return;
+        if (!CanShoot() || enemyTarget == null) return;
 
-        Debug.Log("Bot SHOOTS");
-        stateText.text = "Bot SHOOTS";
-
-        // Ici tu mets la logique pour instancier ton projectile, raycast ou autre...
-        // Exemple : Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        GameObject bulletGO = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+        Bullet bullet = bulletGO.GetComponent<Bullet>();
+        bullet.SetTarget(enemyTarget);
 
         Ammo--;
         lastFireTime = Time.time;
+
+        Debug.Log("Bot SHOOTS");
+        stateText.text = "Bot SHOOTS";
     }
 
 
@@ -151,6 +157,7 @@ public class BotController : MonoBehaviour
 
         if (Health <= 0)
         {
+            lifeText.text = $"Bot : {Health}%";
             Die();
         }
     }
