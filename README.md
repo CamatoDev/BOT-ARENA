@@ -1,6 +1,6 @@
 # Bot Arena
 
-![Bot Arena Banner](./art/banner.png)
+![Bot Arena Banner](vlcsnap-2025-05-29-09h57m26s481.png)
 
 **Bot Arena** est un jeu d'arène 2D développé sous Unity, où deux bots IA s'affrontent dans une arène dynamique. Chaque bot utilise une machine à états finis (FSM), un système de pathfinding A\* et des comportements autonomes (patrouille, poursuite, tir, fuite, recharge, collecte d’items).
 
